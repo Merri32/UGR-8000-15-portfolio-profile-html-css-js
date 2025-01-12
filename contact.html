@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
+    <link rel="stylesheet" href="css/styies.css">
 </head>
 <body>
     <header>
@@ -12,48 +13,55 @@
                 <li><a href= "index.html">Home</a></li>
                 <li><a href= "about.html">About</a></li>
                 <li><a href= "cv.html">CV</a></li>
-                <li><a href= "portifolio.html">Portifolio</a></li>
-                <li><a href= "contact.html">Contact</a></li>
+                <li><a href= "portfolio.html">Portifolio</a></li>
+                <li><a href= "contact.html"  class="active">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <div class="main">
-        <p> 
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-fill" viewBox="0 0 16 16">
-                <path d="M8 0a5 5 0 0 0-5 5c0 3.5 5 11 5 11s5-7.5 5-11a5 5 0 0 0-5-5zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"/>
-            </svg>
-            Addis Ababa, 6killo
-        </p>
-        <p> 📧 bihonmeron16@gmail.com</p>
-        <p> 📱 0940535067</p>
-    </div>
-    <div class="main">
-        <div class="input-container">
-            <div>
-                <label for="name">First-Name:</label>
-                <input type="text" id="name" name="name" placeholder="Enter your name">
+    <P id="me"> Let's Talk</P>
+    <main>
+        <div class="contact-info">
+            <p> 
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-fill" viewBox="0 0 16 16">
+                    <path d="M8 0a5 5 0 0 0-5 5c0 3.5 5 11 5 11s5-7.5 5-11a5 5 0 0 0-5-5zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"/>
+                </svg>
+                Addis Ababa, 6killo
+            </p>
+            <p> 📧 meronbihon13@gmail.com.</p>
+            <p> 📱 0909723219</p>
+            <img src="images/me.jpg" alt="my picture" height="300" width="300">
+        </div>
+        
+        <div class="form-container">
+            <div class="input-container1">
+                <div>
+                    <label for="name">First-Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name">
+                </div>
+                <div>
+                    <label for="Father-name">Father's Name:</label>
+                    <input type="text" id="Father-name" name="father-name" placeholder="Enter your father's name">
+                </div>
             </div>
-            <div>
-                <label for="Father-name">Father's Name:</label>
-                <input type="text" id="Father-name" name="father-name" placeholder="Enter your father's name">
+            
+            <div class="input-container">
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email">
+                </div>
+            </div>
+            <div class="input-container">
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Enter your message here..."></textarea>
+                    <button type="submit">Submit</button> 
+                </div>
             </div>
         </div>
-        <div class="input-container">
-            <div>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email">
-            </div>
-        </div>
-        <div class="input-container">
-            <div>
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" placeholder="Enter your message here..."></textarea>
-                <button type="submit">Send</button> 
-            </div>
-        </div>
-    </div>
-    <footer>
-        <p>© 2024 Meron Bihon. All rights reserved.</p> 
-    </footer>
-</body>
-</html>
+        </main>
+        <footer>
+            <p>© 2024 Meron Bihon. All rights reserved.</p> 
+        </footer>
+        <script src="javascript/script.js"></script>
+    </body>
+    </html>

@@ -1,0 +1,235 @@
+*{
+ margin: 0;
+padding: 0;}
+ul{
+    list-style-type: none;
+     margin: 0px;
+    padding: 0px;
+}
+
+li{
+    display: inline-block;
+    margin-right: 20px;
+    padding-top: 20px;
+}
+a{
+    text-decoration: none;
+    color:rgb(12, 20, 243);
+}
+a:hover{
+    background-color: rgb(158, 158, 238);
+}
+
+header{
+    background-color :#191970 ;
+    height: 70px;
+    text-align: center;
+    position: relative;
+    
+}
+nav ul li a.active {
+  text-decoration: underline;}
+h1{
+    text-align: center;
+    color: blue;
+    margin-top: 300px;
+    padding-left: 60px;
+    padding-right: 60px;
+}      
+.content {
+    margin: 200px; /* Optional: Add margin around the content */
+}
+
+.side-by-side {
+    display: flex; /* Use flexbox layout */
+    justify-content: space-between; /* Space out items */
+    align-items: flex-start; /* Vertically center the items */
+}
+
+.text-content {
+    display: flex; /* Use flexbox for text elements if needed */
+    flex-direction: column; /* Stack heading and paragraph vertically */
+    gap: 30px; /* Space between heading and paragraph */
+    width: 60%;
+}
+
+img {
+    max-width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+body{
+    background-color: #87CEEB;
+    font-family: Arial, sans-serif; 
+    line-height: 1.6;  
+}
+.intro-paragraph{
+    padding: 80px;
+    text-align: center;
+    
+}
+main {
+    display: flex;         /* Enables flexbox layout */
+    flex-wrap: wrap;      /* Allows wrapping to the next line if necessary */
+    gap: 40px;           /* Space between sections */
+    margin-bottom: 250px;
+}
+    
+.random-section {
+    flex: 1;              /* Allows sections to grow equally */
+    min-width: 200px;     /* Minimum width for each section */
+    background: #0000FF;  
+    padding: 40px;
+    margin-top: 60px;        
+}
+.p-section {
+    flex: 1;              
+    min-width: 200px;     
+    background:  #87CEEB;  
+    padding: 60px;        
+}
+.div2{
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+    
+}
+.div2 div {
+    flex: 1;
+}
+.contact-info {
+    flex: 1;
+    background-color:  #0000FF;
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 100px;
+}
+
+/* Form Container Styles */
+.form-container {
+    flex: 1;
+    background-color:  #0000FF;;
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(1, 1, 1, 0.1);
+    margin-top: 100px;
+}
+.input-container {
+    display: flex;
+    flex-direction: column; /* Stack label and input vertically */
+    margin-bottom: 20px; /* Space between inputs */
+}
+.input-container1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row; /* Stack label and input vertically */
+    margin-bottom: 15px; /* Space between inputs */
+}
+.input-container1 div {
+    flex: 1; /* Allow the fields to grow equally */
+    margin-right: 10px; /* Add space for the gap */
+    margin-bottom: 20px;
+}
+#name, #Father-name {
+    width: 250px; 
+}
+#email{
+    width: 500px;
+    height: 40px;
+}
+#message{
+    height:70px;
+    width: 600px
+}
+label {
+    margin-bottom: 10px; /* Space between label and input */
+}
+#me{
+    text-align: center;
+    margin-top: 50px;
+}
+input, textarea {
+    padding: 10px;
+    border: 2px solid  blue;
+    border-radius: 5px;
+    background-color: #C1C3F4 ;
+}
+
+button {
+    padding: 10px;
+    background-color: #C1C3F4;
+    color: black; 
+    border-radius: 7px;
+    border: 2px solid blue ;
+    cursor: pointer;
+}
+
+footer{
+    background-color: #191970;
+    height: 20px;
+    padding: 20px;
+    text-align: center;
+    bottom: 0;
+    position: relative;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: relative; 
+}
+nav ul li {
+ margin: 0 15px;}
+
+.hamburger {
+display: none; 
+flex-direction: column;
+cursor: pointer;
+margin-left: auto; 
+}
+
+.hamburger div {
+width: 25px;
+height: 3px;
+background-color: white;
+margin: 4px 0;
+}
+
+
+@media (max-width: 956px) {
+nav ul {
+    display: none; 
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 60px; 
+    left: 0;
+    background-color: rgb(108, 108, 188);;
+}
+
+nav ul.active {
+    display: flex; 
+}
+
+.hamburger {
+    display: flex; 
+}
+.input-container1 {
+    flex-direction: column; 
+}
+main{
+    flex-direction: column;
+}
+.p-section{
+    width: 300px;
+}
+.random-section{
+    width: 300px;
+}
+}
+
+
+
+    
+
